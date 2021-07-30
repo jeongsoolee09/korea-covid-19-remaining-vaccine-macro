@@ -7,7 +7,6 @@ import json
 import os
 import sys
 import time
-import http.cookiejar
 from playsound import playsound
 from datetime import datetime
 import telepot
@@ -19,7 +18,6 @@ import random
 search_time = random.uniform(0.5, 2.0)  # 잔여백신을 해당 시간마다 한번씩 검색합니다. 단위: 초
 urllib3.disable_warnings()
 
-# jar = http.cookiejar.CookieJar()
 jar = browser_cookie3.chrome(domain_name=".kakao.com")
 
 
